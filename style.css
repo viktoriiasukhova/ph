@@ -304,6 +304,10 @@ h3 {
     color: lightgray;
 }
 
+.index.active {
+    opacity: 0;
+}
+
 .nav-menu {
     background-color: white;
     /*    background-color: blue; */
