@@ -20,6 +20,13 @@
     padding: 0;
 }
 
+body {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
 html {
     box-sizing: border-box;
     -webkit-text-size-adjust: 100%;
@@ -52,72 +59,7 @@ a {
     line-height: normal
 }
 
-/* .loader {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    -webkit-animation: loader var(--loader-time) ease-in;
-    -moz-animation: loader var(--loader-time) ease-in;
-    -o-animation: loader var(--loader-time) ease-in;
-    animation: loader var(--loader-time) ease-in;
-    background-color: white;
-}
- */
-/* @-webkit-keyframes loader {
-    0% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-} */
-
-/* @-moz-keyframes loader {
-    0% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
- */
-/* @-o-keyframes loader {
-    0% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-} */
-
-/* @keyframes loader {
-    0% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
- */
 .text {
-    /*  background-color: rebeccapurple; */
-    position: absolute;
-    left: 5%;
-    top: 20%;
-    display: flex;
-    gap: 10px;
     -webkit-animation: text-load 1s ease-in;
     -moz-animation: text-load 1s ease-in;
     -o-animation: text-load 1s ease-in;
@@ -127,14 +69,14 @@ a {
     opacity: 0;
     color: black;
     text-transform: uppercase;
-    padding: 20px;
-    white-space: nowrap;
-    transition: all .6s;
+    padding: 5px;
+    transition: all 600ms;
+    z-index: 7;
 }
 
 h1 {
     font-size: 0.8rem;
-    margin: 10px 0;
+    margin: 10px;
     font-weight: lighter;
 }
 
@@ -250,6 +192,7 @@ h3 {
 @media screen and (min-width:240px) and (max-width:767px) {
     .text {
         left: 3%;
+        top: 3%;
     }
 
     h1 {
@@ -262,18 +205,16 @@ h3 {
 }
 
 #main-header {
-    /* background-color: orangered; */
-    /*  position: absolute; */
-    position: fixed;
+    position: absolute;
+    /*  position: fixed; */
     width: 100%;
-    height: 100px;
+    height: 50px;
     bottom: 0;
     left: 0;
-    /*  mix-blend-mode: difference; */
     cursor: auto;
     font-size: 0.8rem;
     z-index: 8;
-    transition: all .6s;
+    transition: all 600ms;
 }
 
 
@@ -305,24 +246,22 @@ h3 {
 }
 
 .index.active {
-    opacity: 0;
+    display: none;
 }
 
 .nav-menu {
     background-color: white;
-    /*    background-color: blue; */
     position: fixed;
     right: 0;
     top: 0;
     width: 0;
     height: 100%;
-    transition: all .6s;
+    transition: all 600ms;
     z-index: 10;
     cursor: pointer;
 }
 
 .close-button {
-    /* background-color: green; */
     font-size: 0.8rem;
     font-family: inherit;
     width: 100%;
@@ -330,11 +269,10 @@ h3 {
     padding: 10px;
     text-decoration: underline;
     height: fit-content;
-    transition: all .6s;
+    transition: all 700ms;
 }
 
 .nav-item {
-    /* background-color: rgba(0, 0, 255, 0.39); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -345,7 +283,7 @@ h3 {
     color: black;
     text-transform: lowercase;
     font-size: 0.8rem;
-    transition: all .6s;
+    transition: all 700ms;
 }
 
 .nav-link:hover {
@@ -364,7 +302,7 @@ h3 {
 @media screen and (min-width:239px) and (max-width:768px) {
     .nav-menu.active {
         width: 100%;
-        transition: all .6s;
+        transition: all 600ms;
     }
 
     .nav-link,
@@ -374,41 +312,29 @@ h3 {
     }
 }
 
-.gallery-wrapper {
-    /*  background-color: lightgreen; */
-    position: relative;
-    height: 100vh;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-     transition: all .3s;
-    z-index: 1;
-}
-
 .gallery-container {
-    /*  background-color: blue; */
+    max-width: 50%;
     position: absolute;
-    max-width: 70%;
+    max-width: 50%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    height: auto;
-    margin: 0 auto;
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2px;
-    transition: all .7s;
+    transition: all 700ms;
     z-index: 5;
     opacity: 1;
+    padding: .7rem;
 }
 
 .gallery-container img {
     max-width: 100%;
     display: block;
     height: auto;
+    margin: auto;
 }
 
 .overlay {
@@ -420,9 +346,9 @@ h3 {
     overflow: hidden;
     width: 0;
     height: 100%;
-    transition: .4s;
+    transition: all 700ms;
     opacity: .9;
-    z-index: 7;
+    z-index: 9;
 }
 
 .gallery-container.active {
