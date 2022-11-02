@@ -390,7 +390,7 @@ h3 {
 .gallery-container {
     /*  background-color: blue; */
     position: absolute;
-    max-width: 50%;
+    max-width: 70%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
