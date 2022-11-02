@@ -397,14 +397,26 @@ a {
     -webkit-animation-fill-mode: both;
 }
 
+.gallery-wrapper {
+    position: relative;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
 .gallery-container {
-    max-width: 90%;
+    max-width: 95%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 7px;
-    margin: 5% 1%;
+    gap: .5rem;
+    margin: 2% 1%;
     padding: 3px;
     transition: all 700ms;
     opacity: 1;
@@ -416,7 +428,6 @@ a {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    gap: 2px;
 }
 
 .box img {
@@ -529,22 +540,6 @@ a {
 .gallery-wrapper.active .overlay {
     width: 100%;
     left: 0;
-}
-
-@media screen and (min-width:239px) and (max-width:768px) {
-    .gallery-container {
-        display: none;
-    }
-
-    .overlay {
-        display: none;
-    }
-}
-
-@media screen and (min-width:768px) and (max-width:1024px){
-    .gallery-container {
-       margin: 2% 1%;
-    }
 }
 
 #main-header {
@@ -744,9 +739,17 @@ a {
 }
 
 @media screen and (min-width:239px) and (max-width:768px) {
+    .gallery-container {
+        display: none;
+    }
+
+    .modal {
+        display: block;
+    }
+
     .modalContent {
-    width: 70%;
-}
+        min-width: 55%;
+    }
 
     .next,
     .prev,
@@ -758,7 +761,7 @@ a {
         display: none;
     }
 
-    .modal {
-        display: block;
+    .overlay {
+        display: none;
     }
 }
