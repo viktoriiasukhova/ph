@@ -399,7 +399,6 @@ a {
 
 .gallery-wrapper {
     position: relative;
-    position: fixed;
     z-index: 1;
     left: 0;
     top: 0;
@@ -654,7 +653,6 @@ a {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 5rem;
     left: 0;
     top: 0;
     width: 100%;
@@ -664,7 +662,7 @@ a {
 
 .modalContent {
     position: absolute;
-    max-width: 50%;
+    max-width: 55%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -679,13 +677,12 @@ a {
 }
 
 .modalContent.active {
-    left: 35%;
+    left: 33%;
 }
 
 .modal.active .overlay {
     width: 100%;
     left: 0;
-    opacity: .1;
 }
 
 .mySlides {
@@ -748,7 +745,7 @@ a {
     }
 
     .modalContent {
-        min-width: 55%;
+        min-width: 70%;
     }
 
     .next,
