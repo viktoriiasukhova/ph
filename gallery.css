@@ -20,10 +20,6 @@
     padding: 0;
 }
 
-body {
-    min-height: 100vh;
-}
-
 html {
     box-sizing: border-box;
     -webkit-text-size-adjust: 100%;
