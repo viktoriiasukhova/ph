@@ -38,7 +38,7 @@ button {
     border: none;
     border-radius: 0;
     background-color: transparent;
-    cursor: pointer
+    cursor: pointer;
 }
 
 
@@ -263,6 +263,7 @@ h3 {
     text-decoration: underline;
     height: fit-content;
     transition: all 700ms;
+    color: rgba(0, 0, 0, 0.904);
 }
 
 .nav-item {
@@ -285,7 +286,7 @@ h3 {
 }
 
 .nav-menu span {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 .nav-menu.active {
