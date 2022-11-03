@@ -38,7 +38,7 @@ button {
     border: none;
     border-radius: 0;
     background-color: transparent;
-    cursor: pointer;
+    cursor: pointer
 }
 
 
@@ -354,62 +354,67 @@ a {
 }
 
 .one {
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    -o-animation-delay: 1s;
-    animation-delay: 1s;
+    -webkit-animation-delay: 500ms;
+    -moz-animation-delay: 500ms;
+    -o-animation-delay: 500ms;
+    animation-delay: 500ms;
 }
 
 .two {
-    -webkit-animation-delay: 1.1s;
-    -moz-animation-delay: 1.1s;
-    -o-animation-delay: 1.1s;
-    animation-delay: 1.1s;
+    -webkit-animation-delay: 600ms;
+    -moz-animation-delay: 600ms;
+    -o-animation-delay: 600ms;
+    animation-delay: 600ms;
 }
 
 .three {
-    -webkit-animation-delay: 1.2s;
-    -moz-animation-delay: 1.2s;
-    -o-animation-delay: 1.2s;
-    animation-delay: 1.2s;
+    -webkit-animation-delay: 700ms;
+    -moz-animation-delay: 700ms;
+    -o-animation-delay: 700ms;
+    animation-delay: 700ms;
 }
 
 .four {
-    -webkit-animation-delay: 1.3s;
-    -moz-animation-delay: 1.3s;
-    -o-animation-delay: 1.3s;
-    animation-delay: 1.3s;
+    -webkit-animation-delay: 800ms;
+    -moz-animation-delay: 800ms;
+    -o-animation-delay: 800ms;
+    animation-delay: 800ms;
 }
 
 .five {
-    -webkit-animation-delay: 1.4s;
-    -moz-animation-delay: 1.4s;
-    -o-animation-delay: 1.4s;
-    animation-delay: 1.4s;
+    -webkit-animation-delay: 900ms;
+    -moz-animation-delay: 900ms;
+    -o-animation-delay: 900ms;
+    animation-delay: 900ms;
 }
 
 .animate {
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    -o-animation-duration: 1.5;
-    animation-duration: 1.5s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
     animation-fill-mode: both;
     -webkit-animation-fill-mode: both;
 }
 
 .gallery-wrapper {
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
+   /*  background-color: palegreen; */
+    position: relative;
     width: 100%;
-    height: 100%;
-    overflow: auto;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    z-index: 1;
+    transition: all 500ms;
 }
 
 .gallery-container {
-    max-width: 95%;
+   /*  background-color: blueviolet; */
+    position: absolute;
     height: auto;
+    max-width: 95%;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -417,16 +422,18 @@ a {
     gap: .5rem;
     margin: 2% 1%;
     padding: 3px;
-    transition: all 700ms;
+    transition: all 500ms;
     opacity: 1;
 }
 
 .box {
+    /*  background-color: aqua; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    gap: 2px;
 }
 
 .box img {
@@ -446,22 +453,12 @@ a {
     font-size: 0.6rem;
 }
 
-.text-wrapper {
-    /*  background-color: green; */
-    font-size: 0.8rem;
-    letter-spacing: 3px;
-    margin-top: 5px;
-    overflow: hidden;
-    display: block;
-}
-
-.text-wrapper,
 #main-header .header-wrapper .index,
 .mySlides {
-    -webkit-animation: content-load 300ms ease-in 2.1s forwards;
-    -moz-animation: content-load 300ms ease-in 2.1s forwards;
-    -o-animation: content-load 300ms ease-in 2.1s forwards;
-    animation: content-load 300ms ease-in 2.1s forwards;
+    -webkit-animation: content-load 300ms ease-in 1s forwards;
+    -moz-animation: content-load 300ms ease-in 1s forwards;
+    -o-animation: content-load 300ms ease-in 1s forwards;
+    animation: content-load 300ms ease-in 1s forwards;
     opacity: 0;
 }
 
@@ -527,7 +524,7 @@ a {
     overflow: hidden;
     width: 0;
     height: 100%;
-    transition:all 700ms;
+    transition: all 500ms;
     opacity: .9;
     z-index: 7;
 }
@@ -542,16 +539,19 @@ a {
 }
 
 #main-header {
+    /*   background-color: orangered; */
+    /*  position: absolute; */
     position: fixed;
     width: 100%;
     height: 50px;
+    /* height: 100px; */
     bottom: 0;
     left: 0;
     /*  mix-blend-mode: difference; */
     cursor: auto;
     font-size: 0.8rem;
     z-index: 8;
-    transition: all 700ms;
+    transition: all 500ms;
 }
 
 #main-header .header-wrapper {
@@ -574,7 +574,7 @@ a {
     letter-spacing: 0;
     padding: 10px 5px;
     text-decoration: underline;
-    transition: all 700ms;
+    transition: all 500ms;
 }
 
 #main-header .header-wrapper .index:hover {
@@ -583,21 +583,23 @@ a {
 
 .index.active {
     display: none;
- }
+}
 
 .nav-menu {
     background-color: white;
+    /* background-color: blue; */
     position: fixed;
     right: 0;
     top: 0;
     width: 0;
     height: 100%;
-    transition: all 700ms;
+    transition: all 500ms;
     z-index: 10;
     cursor: pointer;
 }
 
 .close-button {
+    /*  background-color: green; */
     font-size: 0.8rem;
     font-family: inherit;
     width: 100%;
@@ -605,11 +607,12 @@ a {
     padding: 10px;
     text-decoration: underline;
     height: fit-content;
-    transition: all 700ms;
+    transition: all 500ms;
     color: rgba(0, 0, 0, 0.904);
 }
 
 .nav-item {
+    /*   background-color: rgba(0, 0, 255, 0.39); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -620,7 +623,7 @@ a {
     color: black;
     text-transform: lowercase;
     font-size: 0.8rem;
-    transition: all 700ms;
+    transition: all 500ms;
 }
 
 .nav-link:hover {
@@ -639,7 +642,7 @@ a {
 @media screen and (min-width:239px) and (max-width:768px) {
     .nav-menu.active {
         width: 100%;
-        transition: all 700ms;
+        transition: all 500ms;
     }
 
     .nav-link,
@@ -647,10 +650,15 @@ a {
     #main-header {
         font-size: 0.7rem;
     }
+
+    .nav-menu span {
+        font-size: 0.6rem;
+    }
 }
 
 .modal {
     background-color: #f2f2f2db;
+   /* background-color: rgba(211, 211, 211, 0.743); */
     display: none;
     position: fixed;
     z-index: 1;
@@ -662,8 +670,10 @@ a {
 }
 
 .modalContent {
+   /*  background-color: gray; */
     position: absolute;
-    max-width: 55%;
+    min-width: 65%;
+    max-width: 75%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -673,24 +683,30 @@ a {
     align-items: center;
     justify-content: center;
     padding: 2px;
-    transition: all 700ms;
+    transition: all 500ms;
     z-index: 1;
 }
 
 .modalContent.active {
-    left: 33%;
+    min-width: 40%;
+    max-width: 45%;
+    left: 32%;
 }
 
 .modal.active .overlay {
     width: 100%;
     left: 0;
+    /*   opacity: .1; */
 }
 
 .mySlides {
     display: none;
+    /*  background: url(/img/russia:compressed/r1.jpg) no-repeat center center;
+   background-size: cover; */
 }
 
 .mySlides img {
+    /*  background-color: orange; */
     display: block;
     margin: auto;
     max-width: 100%;
@@ -706,14 +722,13 @@ a {
 }
 
 .next,
-.prev,
-.close,
-.divider {
-    /*  background-color: blue; */
+.prev {
+   /*  background-color: blue; */
     cursor: pointer;
     position: absolute;
-    bottom: -6%;
-    width: auto;
+    bottom: 0%;
+    /*  bottom: -6%; */
+    /*  width: auto; */
     padding: 2px 5px;
     font-size: 0.8rem;
     user-select: none;
@@ -721,22 +736,29 @@ a {
 }
 
 .prev {
-    right: 18%;
-}
-
-.divider {
-    right: 14%;
+    left: 0;
 }
 
 .next {
-    right: 5%;
-}
-
-.close {
     right: 0%;
 }
 
-@media screen and (min-width:239px) and (max-width:768px) {
+.close {
+   /*  background-color: blue; */
+    cursor: pointer;
+    position: absolute;
+    /*  bottom: -6%; */
+    /*  width: auto; */
+    padding: 2px 5px;
+    font-size: 0.8rem;
+    user-select: none;
+    color: black;
+    top: -5%;
+    right: 0%;
+}
+
+
+@media screen and (min-width:230px) and (max-width:768px) {
     .gallery-container {
         display: none;
     }
@@ -746,12 +768,16 @@ a {
     }
 
     .modalContent {
-        min-width: 75%;
+        min-width: 80%;
+        max-width: 90%;
+    }
+
+    .modalContent.active {
+        left: 50%;
     }
 
     .next,
-    .prev,
-    .divider {
+    .prev {
         font-size: 0.7rem;
     }
 
