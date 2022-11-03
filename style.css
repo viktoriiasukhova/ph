@@ -367,7 +367,7 @@ h3 {
 
 @media screen and (min-width:239px) and (max-width:767px) {
        .gallery-container {
-        min-width: 75%
+        min-width: 90%
     }
     
     .overlay {
