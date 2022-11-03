@@ -13,6 +13,7 @@ indexMenu.addEventListener('click', () => {
     overlay.classList.toggle('active');
     modalContent.classList.toggle('active');
     modal.classList.toggle('active');
+   
 });
 
 document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
@@ -39,7 +40,8 @@ closeButton.addEventListener('click', () => {
 // Open the Modal
 function openModal() {
     document.getElementById("myModal").style.display = "block";
-     if (galleryContainer.style.display === 'none'){
+    galleryWrapper.style.display = 'none';
+    if (galleryContainer.style.display === 'none'){
         document.getElementById("myModal").style.display = "block";
     }else {
         galleryContainer.style.display = 'flex';
@@ -49,6 +51,7 @@ function openModal() {
 // Close the Modal
 function closeModal() {
     document.getElementById("myModal").style.display = "none";
+    galleryWrapper.style.display = 'flex';
 }
 
 var slideIndex = 1;
@@ -75,6 +78,3 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
 }
-
-
-
