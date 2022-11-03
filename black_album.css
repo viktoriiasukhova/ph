@@ -650,23 +650,6 @@ a {
     width: 35%;
 }
 
-/* @media screen and (min-width:239px) and (max-width:768px) {
-    .nav-menu.active {
-        width: 100%;
-        transition: all 500ms;
-    }
-
-    .nav-link,
-    .close-button,
-    #main-header {
-        font-size: 0.7rem;
-    }
-
-    .nav-menu span {
-        font-size: 0.6rem;
-    }
-} */
-
 .modal {
     background-color: #f2f2f2db;
     display: none;
@@ -736,8 +719,6 @@ a {
     cursor: pointer;
     position: absolute;
     bottom: 0%;
-    /*  bottom: -6%; */
-    /*  width: auto; */
     padding: 2px 5px;
     font-size: 0.8rem;
     user-select: none;
@@ -814,18 +795,3 @@ a {
         display: none;
     }
 }
-
-/* @media screen and (min-width:239px) and (max-width:768px) {
-.modalContent {
-   min-width: 55%;
-}
-    .next,
-    .prev,
-    .divider {
-        font-size: 0.7rem;
-    }
-
-    .close {
-        display: none;
-    }
-} */
