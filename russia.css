@@ -438,7 +438,7 @@ a {
 
 .numbertext {
     color: #f2f2f2;
-    font-size: .6rem;
+    font-size: .7rem;
 }
 
 #main-header .header-wrapper .index,
@@ -613,6 +613,7 @@ a {
 .nav-link:hover {
     text-decoration: underline;
     color: lightgray;
+    font-style: italic;
 }
 
 .nav-menu span {
