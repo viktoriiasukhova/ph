@@ -414,7 +414,7 @@ a {
    /*  background-color: blueviolet; */
     position: absolute;
     height: auto;
-    max-width: 95%;
+    max-width: 99%;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
