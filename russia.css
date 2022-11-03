@@ -596,7 +596,6 @@ a {
 }
 
 .nav-item {
-    /*   background-color: rgba(0, 0, 255, 0.39); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -617,7 +616,7 @@ a {
 }
 
 .nav-menu span {
-    font-size: .7rem;
+    font-size: .75rem;
      font-weight: 600;
 }
 
