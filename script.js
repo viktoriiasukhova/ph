@@ -39,6 +39,11 @@ closeButton.addEventListener('click', () => {
 // Open the Modal
 function openModal() {
     document.getElementById("myModal").style.display = "block";
+     if (galleryContainer.style.display === 'none'){
+        document.getElementById("myModal").style.display = "block";
+    }else {
+        galleryContainer.style.display = 'flex';
+    }
 }
 
 // Close the Modal
