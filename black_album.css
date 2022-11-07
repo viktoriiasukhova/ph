@@ -9,7 +9,6 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Cormorant Garamond', serif;
-    /*  white-space: nowrap; */
 }
 
 button {
@@ -38,7 +37,6 @@ a {
 }
 
 #main-header {
-   /*  background-color: royalblue; */
     width: 100%;
     height: 50px;
     /*  position: sticky; */
@@ -50,12 +48,6 @@ a {
     transition: all 500ms;
     padding: 1rem;
 }
-
-/* .header-wrapper {
-    width: 10rem;
-    background-color: rgba(24, 31, 8, 0.082);
-    border-bottom: .2px solid;
-} */
 
 #main-header .header-wrapper .index,
 .separator,
@@ -82,7 +74,6 @@ a {
 }
 
 .nav-menu {
-    /*  background-color: tan; */
     background-color: white;
     position: fixed;
     right: 0;
@@ -92,11 +83,9 @@ a {
     transition: all 500ms;
     z-index: 10;
     cursor: pointer;
-
 }
 
 .close-button {
-    /*  background-color: hotpink; */
     font-size: .9rem;
     font-weight: 600;
     width: 100%;
@@ -109,7 +98,6 @@ a {
 }
 
 .nav-item {
-    /*  background-color: aquamarine; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -117,7 +105,6 @@ a {
 }
 
 .nav-link {
-    /*  background-color: darkgoldenrod; */
     color: black;
     text-transform: lowercase;
     font-size: 0.8rem;
@@ -125,7 +112,6 @@ a {
 }
 
 .nav-link:hover {
-    /* text-decoration: underline; */
     color: lightgray;
     font-style: italic;
 }
@@ -140,7 +126,6 @@ a {
 }
 
 .gallery-wrapper {
-    /*  background-color: orange; */
     position: relative;
     display: flex;
     align-items: flex-start;
@@ -153,8 +138,6 @@ a {
 }
 
 .gallery-container {
-    /* background-color: gray; */
-    /* height: auto; */
     max-width: 95%;
     display: flex;
     flex-wrap: wrap;
@@ -168,7 +151,6 @@ a {
 }
 
 .box {
-    /*  background-color: blue; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -193,7 +175,6 @@ a {
 }
 
 .text-wrapper {
-    /*  background-color: red; */
     font-weight: 600;
     font-size: .8rem;
     letter-spacing: 3px;
