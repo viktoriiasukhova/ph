@@ -379,3 +379,10 @@ h3 {
         display: none;
     }
 }
+
+@media screen and (orientatiton:portrait) {
+    body {
+        height: 100vw;
+        transform: rotate(90deg);
+    }
+}
