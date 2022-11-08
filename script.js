@@ -15,7 +15,6 @@ indexMenu.addEventListener('click', () => {
     overlay.classList.toggle('active');
     modalContent.classList.toggle('active');
     modal.classList.toggle('active');
-   
 });
 
 document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
