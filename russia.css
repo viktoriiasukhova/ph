@@ -610,7 +610,6 @@ a {
 }
 
 .modal {
-    background-color: whitesmoke;
     display: none;
     position: fixed;
     z-index: 1;
