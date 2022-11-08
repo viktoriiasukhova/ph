@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Cormorant Garamond', serif;
+    /*  white-space: nowrap; */
 }
 
 button {
@@ -37,27 +38,31 @@ a {
 }
 
 #main-header {
-      /* background-color: orange; */
+     /* background-color: orange; */
     width: 100%;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    /*  position: relative; */
     position: sticky;
     cursor: auto;
     z-index: 9;
     transition: all 500ms;
-    padding: 1rem 2.5rem;
+    padding: 1rem;
 }
 
 .header-wrapper {
+    /* background-color: salmon; */
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
+
 #main-header .header-wrapper .index,
 #main-header .header-wrapper .separator,
 #main-header .header-wrapper .closecursor {
+    /*  background-color: gray; */
     color: rgba(0, 0, 0, 0.904);
     cursor: pointer;
     font-style: normal;
@@ -79,6 +84,7 @@ a {
 }
 
 .nav-menu {
+    /*  background-color: red; */
     background-color: white;
     position: fixed;
     right: 0;
@@ -86,11 +92,12 @@ a {
     width: 0;
     height: 100%;
     transition: all 500ms;
-    z-index: 10;
+    z-index: 1000;
     cursor: pointer;
 }
 
 .close-button {
+    /* background-color: gray; */
     font-size: .9rem;
     font-weight: 600;
     width: 100%;
@@ -103,6 +110,7 @@ a {
 }
 
 .nav-item {
+    /* background-color: rosybrown; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -110,6 +118,7 @@ a {
 }
 
 .nav-link {
+    /*  background-color: wheat; */
     color: black;
     text-transform: lowercase;
     font-size: 0.8rem;
@@ -131,6 +140,7 @@ a {
 }
 
 .gallery-wrapper {
+    /*  background-color: saddlebrown; */
     position: relative;
     display: flex;
     align-items: flex-start;
@@ -139,9 +149,11 @@ a {
     min-height: 100vh;
     z-index: 2;
     transition: all 500ms;
+    padding-top: 1rem;
 }
 
 .gallery-container {
+    /* background-color: seagreen; */
     max-width: 95%;
     display: flex;
     flex-wrap: wrap;
@@ -155,6 +167,7 @@ a {
 }
 
 .box {
+    /*  background-color: silver; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -166,6 +179,7 @@ a {
 
 .box img {
     padding: 1px;
+    width: min(100%, 170px);
 }
 
 .box .numbertext {
@@ -176,6 +190,15 @@ a {
     color: #f2f2f2;
     font-size: .7rem;
 }
+
+/* .text-wrapper {
+    font-weight: 600;
+    font-size: .8rem;
+    letter-spacing: 3px;
+    margin-top: 5px;
+    overflow: hidden;
+    padding: 1rem;
+} */
 
 #main-header .header-wrapper,
 .text-wrapper,
@@ -241,8 +264,9 @@ a {
     bottom: 0;
     left: 100%;
     right: 0;
-    overflow: auto;
+    overflow: hidden;
     width: 0;
+    /* min-height: 100vh; */
     height: 100%;
     transition: all 500ms;
     opacity: .9;
@@ -610,6 +634,8 @@ a {
 }
 
 .modal {
+    /*  background-color: slateblue; */
+   /*  background-color: whitesmoke; */
     display: none;
     position: fixed;
     z-index: 1;
@@ -621,9 +647,14 @@ a {
 }
 
 .modalContent {
+    /*  background-color: gray; */
     position: relative;
-    width: min(calc(65% - 1rem),650px);
+    width: min(90%, 1200px);
+    /*  width: min(1w, 100px); */
+   /*  width: min(calc(65% - 1rem), 650px); */
+    /* width: min(50%, 550px); */
     right: 0;
+    /*  height: fit-content; */
     height: auto;
     margin: auto;
     margin-top: 9%;
@@ -638,7 +669,7 @@ a {
 }
 
 .modalContent.active {
-    right: 18%;
+    right: 17%;
 }
 
 .overlay {
@@ -652,7 +683,7 @@ a {
     height: 100%;
     transition: all 500ms;
     opacity: .9;
-    z-index: 100;
+    z-index: 10;
 }
 
 .modal.active .overlay {
@@ -661,6 +692,7 @@ a {
 }
 
 .mySlides {
+    /*  background-color: rosybrown; */
     width: min(100%, 600px);
     display: none;
     transition: all 500ms;
@@ -675,6 +707,7 @@ a {
 
 .next,
 .prev {
+    /* background-color: blue; */
     cursor: pointer;
     position: absolute;
     bottom: 0%;
@@ -695,7 +728,6 @@ a {
 .mySlides {
     animation-delay: 300ms;
 }
-
 
 @media screen and (max-width:768px) {
     #main-header {
@@ -723,6 +755,10 @@ a {
         width: min(100%, 700px);
     }
 
+    .text-wrapper {
+        white-space: nowrap;
+    }
+
     .box {
         width: min(100%, 100px);
     }
@@ -733,7 +769,7 @@ a {
     }
 
     .mySlides {
-        width: min(100%, 400px);
+        width: min(100%, 300px);
     }
 
     .next,
