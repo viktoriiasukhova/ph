@@ -47,6 +47,7 @@ a {
     z-index: 1;
     transition: all 500ms;
     padding: 1rem;
+    margin-bottom: 2rem;
 }
 
 #main-header .header-wrapper .index,
@@ -61,7 +62,6 @@ a {
     letter-spacing: 0;
     padding: 10px 5px;
     transition: all 500ms;
-    vertical-align: bottom;
 }
 
 #main-header .header-wrapper .index:hover,
@@ -134,7 +134,7 @@ a {
     min-height: 100vh;
     z-index: 2;
     transition: all 500ms;
-    padding-top: 1rem;
+    padding-top: 3rem;
 }
 
 .gallery-container {
@@ -183,10 +183,8 @@ a {
     padding: 1rem;
 }
 
+#main-header,
 .text-wrapper,
-#main-header .header-wrapper .index,
-#main-header .header-wrapper .separator,
-#main-header .header-wrapper .closecursor,
 .mySlides {
     -webkit-animation: content-load 300ms ease-in 1s forwards;
     -moz-animation: content-load 300ms ease-in 1s forwards;
@@ -251,7 +249,7 @@ a {
     right: 0;
     overflow: auto;
     width: 0;
-    min-height: 100vh;
+    height: 100%;
     transition: all 500ms;
     opacity: .9;
     z-index: 10;
@@ -626,7 +624,7 @@ a {
 .modalContent {
     /* background-color: gray; */
     position: relative;
-    width: min(90%, 1200px);
+    width: min(50%, 550px);
     right: 0;
     height: fit-content;
    /*  height: auto; */
