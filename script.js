@@ -1,3 +1,4 @@
+let wrapper = document.querySelector('.wrapper');
 let mainHeader = document.getElementById('main-header');
 let indexMenu = document.querySelector('.index');
 let navMenu = document.querySelector('.nav-menu');
@@ -7,6 +8,7 @@ let overlay = document.querySelector('.overlay');
 let modalContent = document.querySelector('.modalContent');
 let modal = document.querySelector('.modal');
 indexMenu.addEventListener('click', () => {
+    wrapper.classList.toggle('active');
     mainHeader.classList.toggle('active');
     indexMenu.classList.toggle('active');
     navMenu.classList.toggle('active');
@@ -18,6 +20,7 @@ indexMenu.addEventListener('click', () => {
 });
 
 document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+    wrapper.classList.remove('active');
     mainHeader.classList.remove('active');
     indexMenu.classList.remove('active');
     navMenu.classList.remove('active');
@@ -30,6 +33,7 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
 
 let closeButton = document.querySelector('.close-button');
 closeButton.addEventListener('click', () => {
+    wrapper.classList.toggle('active');
     mainHeader.classList.toggle('active');
     indexMenu.classList.remove('active');
     navMenu.classList.remove('active');
