@@ -37,17 +37,24 @@ a {
 }
 
 #main-header {
-    width: 100%;
-    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: sticky;
     cursor: auto;
-    z-index: 1;
+    z-index: 9;
     transition: all 500ms;
     padding: 1rem;
 }
 
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
 #main-header .header-wrapper .index,
-.separator,
-.closecursor {
+#main-header .header-wrapper .separator,
+#main-header .header-wrapper .closecursor {
     color: rgba(0, 0, 0, 0.904);
     cursor: pointer;
     font-style: normal;
@@ -55,9 +62,8 @@ a {
     font-size: .9rem;
     line-height: normal;
     letter-spacing: 0;
-    padding: 10px 5px;
+    padding: .1rem;
     transition: all 500ms;
-    vertical-align: bottom;
 }
 
 #main-header .header-wrapper .index:hover,
@@ -79,7 +85,6 @@ a {
     transition: all 500ms;
     z-index: 10;
     cursor: pointer;
-
 }
 
 .close-button {
@@ -131,7 +136,6 @@ a {
     min-height: 100vh;
     z-index: 2;
     transition: all 500ms;
-    padding-top: 1rem;
 }
 
 .gallery-container {
@@ -172,9 +176,8 @@ a {
     font-size: .7rem;
 }
 
-#main-header .header-wrapper .index,
-#main-header .header-wrapper .separator,
-#main-header .header-wrapper .closecursor,
+#main-header .header-wrapper,
+.text-wrapper,
 .mySlides {
     -webkit-animation: content-load 300ms ease-in 1s forwards;
     -moz-animation: content-load 300ms ease-in 1s forwards;
@@ -602,7 +605,7 @@ a {
 .modal {
     display: none;
     position: fixed;
-    /*  z-index: 1; */
+    z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
@@ -612,12 +615,11 @@ a {
 
 .modalContent {
     position: relative;
-    width: min(90%, 1200px);
+    width: min(calc(65% - 1rem),650px);
     right: 0;
-    height: fit-content;
-    /*  height: auto; */
+    height: auto;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 9%;
     margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
@@ -629,8 +631,6 @@ a {
 }
 
 .modalContent.active {
-    min-width: 60%;
-    max-width: 65%;
     right: 18%;
 }
 
