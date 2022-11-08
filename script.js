@@ -1,5 +1,5 @@
-let wrapper = document.querySelector('.wrapper');
 let mainHeader = document.getElementById('main-header');
+let wrapper = document.querySelector('.wrapper');
 let indexMenu = document.querySelector('.index');
 let navMenu = document.querySelector('.nav-menu');
 let galleryWrapper = document.querySelector('.gallery-wrapper');
