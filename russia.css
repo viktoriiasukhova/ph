@@ -651,7 +651,7 @@ a {
     position: relative;
     /*  width: min(1w, 100px); */
    /*  width: min(calc(65% - 1rem), 650px); */
-    width: min(50%, 550px);
+    width: min(50%, 600px);
     right: 0;
     /*  height: fit-content; */
     height: auto;
@@ -693,7 +693,7 @@ a {
 
 .mySlides {
     /*  background-color: rosybrown; */
-    width: min(100%, 600px);
+    width: min(100%,550px);
     display: none;
     transition: all 500ms;
 }
