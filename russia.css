@@ -37,6 +37,9 @@ a {
 }
 
 #main-header {
+      /* background-color: orange; */
+    width: 100%;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -44,7 +47,7 @@ a {
     cursor: auto;
     z-index: 9;
     transition: all 500ms;
-    padding: 1rem;
+    padding: 1rem 2.5rem;
 }
 
 .header-wrapper {
@@ -162,9 +165,7 @@ a {
 }
 
 .box img {
-    object-fit: cover;
     padding: 1px;
-    width: min(100%, 170px);
 }
 
 .box .numbertext {
@@ -246,6 +247,12 @@ a {
     transition: all 500ms;
     opacity: .9;
     z-index: 10;
+}
+
+.wrapper.active .overlay {
+    width: 100%;
+    left: 0;
+    opacity: .1;
 }
 
 .gallery-container.active {
@@ -603,6 +610,7 @@ a {
 }
 
 .modal {
+    background-color: whitesmoke;
     display: none;
     position: fixed;
     z-index: 1;
@@ -717,7 +725,7 @@ a {
     }
 
     .box {
-        width: min(100%, 110px);
+        width: min(100%, 100px);
     }
 
     .modalContent {
