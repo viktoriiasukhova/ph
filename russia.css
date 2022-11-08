@@ -649,10 +649,9 @@ a {
 .modalContent {
     /*  background-color: gray; */
     position: relative;
-    width: min(90%, 1200px);
     /*  width: min(1w, 100px); */
    /*  width: min(calc(65% - 1rem), 650px); */
-    /* width: min(50%, 550px); */
+    width: min(50%, 550px);
     right: 0;
     /*  height: fit-content; */
     height: auto;
