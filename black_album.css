@@ -92,7 +92,7 @@ a {
     width: 0;
     height: 100%;
     transition: all 500ms;
-    z-index: 1000;
+    z-index: 10;
     cursor: pointer;
 }
 
