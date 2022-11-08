@@ -646,7 +646,7 @@ a {
 .modalContent {
    /*  background-color: gray; */
     position: relative;
-    width: min(50%, 550px);
+    width: min(90%, 1200px);
     right: 0;
     /*  height: fit-content; */
     height: auto;
@@ -687,7 +687,7 @@ a {
 }
 
 .mySlides {
-    width: min(100%, 450px);
+    width: min(100%, 400px);
     display: none;
     transition: all 500ms;
 }
