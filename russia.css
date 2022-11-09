@@ -37,25 +37,32 @@ a {
     line-height: normal
 }
 
-.text {
+.loader {
+    /* background-color: aqua; */
+    width: 100vw;
+    height: 100vh;
     position: fixed;
-    left: 10%;
-    top: 35%;
-    -webkit-animation: text-load 1s ease-in forwards;
-    -moz-animation: text-load 1s ease-in forwards;
-    -o-animation: text-load 1s ease-in forwards;
-    animation: text-load 1s ease-in forwards;
+    -webkit-animation: text-load 1.3s ease-in forwards;
+    -moz-animation: text-load 1.3s ease-in forwards;
+    -o-animation: text-load 1.3s ease-in forwards;
+    animation: text-load 1.3s ease-in forwards;
     animation-fill-mode: forwards;
     transform: translateY(-20px);
     opacity: 0;
+    transition: all 1.3s;
+}
+
+.text {
+    position: relative;
+    left: 10%;
+    top: 34%;
     color: black;
     text-transform: uppercase;
     padding: 5px;
-    transition: all 1.7s;
-    z-index: 7;
+    width: 13rem;
 }
 
-.text-hidden {
+.loader-hidden {
     opacity: 0;
     visibility: hidden;
 }
@@ -121,7 +128,7 @@ h3 {
 }
 
 #main-header {
-     /* background-color: orange; */
+    background-color: orange;
     width: 100%;
     height: 50px;
     display: flex;
@@ -131,12 +138,12 @@ h3 {
     position: sticky;
     cursor: auto;
     z-index: 9;
-    transition: all 500ms;
+    transition: all 300ms;
     padding: 1rem;
 }
 
 .header-wrapper {
-    /* background-color: salmon; */
+    background-color: salmon;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -154,7 +161,7 @@ h3 {
     line-height: normal;
     letter-spacing: 0;
     padding: .1rem;
-    transition: all 500ms;
+    transition: all 300ms;
 }
 
 #main-header .header-wrapper .index:hover,
@@ -174,7 +181,7 @@ h3 {
     top: 0;
     width: 0;
     height: 100%;
-    transition: all 500ms;
+    transition: all 300ms;
     z-index: 1000;
     cursor: pointer;
 }
@@ -188,7 +195,7 @@ h3 {
     padding: 10px;
     text-decoration: underline;
     height: fit-content;
-    transition: all 500ms;
+    transition: all 300ms;
     color: rgba(0, 0, 0, 0.904);
 }
 
@@ -223,7 +230,7 @@ h3 {
 }
 
 .gallery-wrapper {
-    /*  background-color: saddlebrown; */
+    background-color: saddlebrown;
     position: relative;
     display: flex;
     align-items: flex-start;
@@ -231,12 +238,12 @@ h3 {
     width: 100%;
     min-height: 100vh;
     z-index: 2;
-    transition: all 500ms;
+    transition: all 300ms;
     padding-top: 1rem;
 }
 
 .gallery-container {
-    /* background-color: seagreen; */
+    background-color: seagreen;
     max-width: 95%;
     display: flex;
     flex-wrap: wrap;
@@ -245,12 +252,12 @@ h3 {
     gap: .5rem;
     margin: 2% 1%;
     padding: 3px;
-    transition: all 500ms;
+    transition: all 300ms;
     opacity: 1;
 }
 
 .box {
-    /*  background-color: silver; */
+    background-color: silver;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -274,22 +281,12 @@ h3 {
     font-size: .7rem;
 }
 
-/* .text-wrapper {
-    font-weight: 600;
-    font-size: .8rem;
-    letter-spacing: 3px;
-    margin-top: 5px;
-    overflow: hidden;
-    padding: 1rem;
-} */
-
 #main-header .header-wrapper,
-.text-wrapper,
 .mySlides {
-    -webkit-animation: content-load 1s ease-in 2.5s forwards;
-    -moz-animation: content-load 1s ease-in 2.5s forwards;
-    -o-animation: content-load 1s ease-in 2.5s forwards;
-    animation: content-load 1s ease-in 2.5s forwards;
+    -webkit-animation: content-load 1s ease-in 1.8s forwards;
+    -moz-animation: content-load 1s ease-in 1.8s forwards;
+    -o-animation: content-load 1s ease-in 1.8s forwards;
+    animation: content-load 1s ease-in 1.8s forwards;
     opacity: 0;
 }
 
@@ -349,7 +346,6 @@ h3 {
     right: 0;
     overflow: hidden;
     width: 0;
-    /* min-height: 100vh; */
     height: 100%;
     transition: all 500ms;
     opacity: .9;
@@ -673,38 +669,38 @@ h3 {
 }
 
 .one {
-    -webkit-animation-delay: 2s;
-    -moz-animation-delay: 2s;
-    -o-animation-delay: 2s;
-    animation-delay: 2s;
+    -webkit-animation-delay: 1.6s;
+    -moz-animation-delay: 1.6s;
+    -o-animation-delay: 1.6s;
+    animation-delay: 1.6s;
 }
 
 .two {
-    -webkit-animation-delay: 2.1s;
-    -moz-animation-delay: 2.1s;
-    -o-animation-delay: 2.1s;
-    animation-delay: 2.1s;
+    -webkit-animation-delay: 1.6s;
+    -moz-animation-delay: 1.6s;
+    -o-animation-delay: 1.6s;
+    animation-delay: 1.6s;
 }
 
 .three {
-    -webkit-animation-delay: 2.2s;
-    -moz-animation-delay: 2.2s;
-    -o-animation-delay: 2.2s;
-    animation-delay: 2.2s;
+    -webkit-animation-delay: 1.6s;
+    -moz-animation-delay: 1.6s;
+    -o-animation-delay: 1.6s;
+    animation-delay: 1.6s;
 }
 
 .four {
-    -webkit-animation-delay: 2.3s;
-    -moz-animation-delay: 2.3s;
-    -o-animation-delay: 2.3s;
-    animation-delay: 2.3s;
+    -webkit-animation-delay: 1.6s;
+    -moz-animation-delay: 1.6s;
+    -o-animation-delay: 1.6s;
+    animation-delay: 1.6s;
 }
 
 .five {
-    -webkit-animation-delay: 2.4s;
-    -moz-animation-delay: 2.4s;
-    -o-animation-delay: 2.4s;
-    animation-delay: 2.4s;
+    -webkit-animation-delay: 1.6s;
+    -moz-animation-delay: 1.6s;
+    -o-animation-delay: 1.6s;
+    animation-delay: 1.6s;
 }
 
 .animate {
@@ -718,7 +714,7 @@ h3 {
 
 .modal {
     /*  background-color: slateblue; */
-   /*  background-color: whitesmoke; */
+    /*  background-color: whitesmoke; */
     display: none;
     position: fixed;
     z-index: 1;
@@ -730,11 +726,12 @@ h3 {
 }
 
 .modalContent {
-    /*  background-color: gray; */
+    background-color: gray;
     position: relative;
+    width: min(50%, 600px);
     /*  width: min(1w, 100px); */
-   /*  width: min(calc(65% - 1rem), 650px); */
-    width: min(90%, 1200px);
+    /*  width: min(calc(65% - 1rem), 650px); */
+    /* width: min(50%, 550px); */
     right: 0;
     /*  height: fit-content; */
     height: auto;
@@ -746,7 +743,7 @@ h3 {
     align-items: center;
     justify-content: center;
     padding: .5rem;
-    transition: all 500ms;
+    transition: all 300ms;
     /*  z-index: 1; */
 }
 
@@ -775,10 +772,10 @@ h3 {
 }
 
 .mySlides {
-    /*  background-color: rosybrown; */
-    width: min(100%,600px);
+    background-color: rosybrown;
+    width: min(100%, 600px);
     display: none;
-    transition: all 500ms;
+    transition: all 300ms;
 }
 
 .modal .numbertext {
@@ -790,7 +787,7 @@ h3 {
 
 .next,
 .prev {
-    /* background-color: blue; */
+    background-color: blue;
     cursor: pointer;
     position: absolute;
     bottom: 0%;
@@ -813,14 +810,14 @@ h3 {
 }
 
 @media screen and (max-width:768px) {
-       h1 {
+    h1 {
         font-size: .65rem;
     }
 
     h3 {
         font-size: 0.6rem;
     }
-    
+
     #main-header {
         height: 40px;
         transition: all 500ms;
@@ -846,10 +843,6 @@ h3 {
         width: min(100%, 700px);
     }
 
-    .text-wrapper {
-        white-space: nowrap;
-    }
-
     .box {
         width: min(100%, 100px);
     }
@@ -867,12 +860,15 @@ h3 {
     .prev {
         font-size: .7rem;
     }
-
 }
 
-@media screen and (orientatiton:portrait) {
-    body {
-        height: 100vw;
-        transform: rotate(90deg);
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+    .box {
+        width: 70px;
     }
+
+    .modalContent {
+        width: min(30%, 200px);
+    }
+
 }
