@@ -721,7 +721,7 @@ h3 {
 
 .modalContent {
     position: relative;
-    width: min(50%, 450px);
+    width: min(90%, 1200px);
     right: 0;
     height: auto;
     margin: auto;
@@ -854,6 +854,12 @@ h3 {
       .overlay {
         display: none;
     }
+}
 
+@media screen and (orientation:portrait) {
+   body {
+    height: 100vw;
+    transform: rotate(90deg);
+   }
 }
 
