@@ -37,6 +37,89 @@ a {
     line-height: normal
 }
 
+.text {
+    position: fixed;
+    left: 10%;
+    top: 35%;
+    -webkit-animation: text-load 1s ease-in forwards;
+    -moz-animation: text-load 1s ease-in forwards;
+    -o-animation: text-load 1s ease-in forwards;
+    animation: text-load 1s ease-in forwards;
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+    color: black;
+    text-transform: uppercase;
+    padding: 5px;
+    transition: all 1.7s;
+    z-index: 7;
+}
+
+.text-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+h1 {
+    font-size: 0.8rem;
+    margin: 10px;
+    font-weight: lighter;
+}
+
+h3 {
+    font-size: 0.7rem;
+    font-weight: lighter;
+}
+
+@-webkit-keyframes text-load {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes text-load {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@-o-keyframes text-load {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes text-load {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 #main-header {
      /* background-color: orange; */
     width: 100%;
@@ -203,10 +286,10 @@ a {
 #main-header .header-wrapper,
 .text-wrapper,
 .mySlides {
-    -webkit-animation: content-load 300ms ease-in 1s forwards;
-    -moz-animation: content-load 300ms ease-in 1s forwards;
-    -o-animation: content-load 300ms ease-in 1s forwards;
-    animation: content-load 300ms ease-in 1s forwards;
+    -webkit-animation: content-load 1s ease-in 2.5s forwards;
+    -moz-animation: content-load 1s ease-in 2.5s forwards;
+    -o-animation: content-load 1s ease-in 2.5s forwards;
+    animation: content-load 1s ease-in 2.5s forwards;
     opacity: 0;
 }
 
@@ -590,38 +673,38 @@ a {
 }
 
 .one {
-    -webkit-animation-delay: 500ms;
-    -moz-animation-delay: 500ms;
-    -o-animation-delay: 500ms;
-    animation-delay: 500ms;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
 }
 
 .two {
-    -webkit-animation-delay: 600ms;
-    -moz-animation-delay: 600ms;
-    -o-animation-delay: 600ms;
-    animation-delay: 600ms;
+    -webkit-animation-delay: 2.1s;
+    -moz-animation-delay: 2.1s;
+    -o-animation-delay: 2.1s;
+    animation-delay: 2.1s;
 }
 
 .three {
-    -webkit-animation-delay: 700ms;
-    -moz-animation-delay: 700ms;
-    -o-animation-delay: 700ms;
-    animation-delay: 700ms;
+    -webkit-animation-delay: 2.2s;
+    -moz-animation-delay: 2.2s;
+    -o-animation-delay: 2.2s;
+    animation-delay: 2.2s;
 }
 
 .four {
-    -webkit-animation-delay: 800ms;
-    -moz-animation-delay: 800ms;
-    -o-animation-delay: 800ms;
-    animation-delay: 800ms;
+    -webkit-animation-delay: 2.3s;
+    -moz-animation-delay: 2.3s;
+    -o-animation-delay: 2.3s;
+    animation-delay: 2.3s;
 }
 
 .five {
-    -webkit-animation-delay: 900ms;
-    -moz-animation-delay: 900ms;
-    -o-animation-delay: 900ms;
-    animation-delay: 900ms;
+    -webkit-animation-delay: 2.4s;
+    -moz-animation-delay: 2.4s;
+    -o-animation-delay: 2.4s;
+    animation-delay: 2.4s;
 }
 
 .animate {
@@ -730,6 +813,14 @@ a {
 }
 
 @media screen and (max-width:768px) {
+       h1 {
+        font-size: .65rem;
+    }
+
+    h3 {
+        font-size: 0.6rem;
+    }
+    
     #main-header {
         height: 40px;
         transition: all 500ms;
