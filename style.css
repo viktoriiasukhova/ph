@@ -376,9 +376,8 @@ h3 {
     }
 }
 
-@media screen and (orientatiton:portrait) {
-    body {
-        height: 100vw;
-        transform: rotate(90deg);
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+    .gallery-container {
+        width: min(30%, 300px);
     }
 }
