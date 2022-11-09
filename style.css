@@ -46,25 +46,26 @@ a {
 }
 
 .text {
-    /*  background-color: rebeccapurple; */
-    /*  position: absolute; */
-    /*  left: 50%;
-    top: 5%; */
-    /*  display: flex; */
-    /*  gap: 10px; */
-    -webkit-animation: text-load 1s ease-in;
-    -moz-animation: text-load 1s ease-in;
-    -o-animation: text-load 1s ease-in;
-    animation: text-load 1s ease-in;
+    position: fixed;
+    left: 10%;
+    top: 35%;
+    -webkit-animation: text-load 1s ease-in forwards;
+    -moz-animation: text-load 1s ease-in forwards;
+    -o-animation: text-load 1s ease-in forwards;
+    animation: text-load 1s ease-in forwards;
     animation-fill-mode: forwards;
     transform: translateY(-20px);
     opacity: 0;
     color: black;
     text-transform: uppercase;
     padding: 5px;
-    /*  white-space: nowrap; */
-    transition: all 600ms;
+    transition: all 2s;
     z-index: 7;
+}
+
+.text-hidden {
+    opacity: 0;
+    visibility: hidden;
 }
 
 h1 {
@@ -128,10 +129,11 @@ h3 {
 }
 
 .wrapper {
-    -webkit-animation: content-load 1s ease-in;
-    -moz-animation: content-load 1s ease-in;
-    -o-animation: content-load 1s ease-in;
-    animation: content-load 1s ease-in;
+    -webkit-animation: content-load 1s ease-in 3s forwards;
+    -moz-animation: content-load 1s ease-in 3s forwards;
+    -o-animation: content-load 1s ease-in 3s forwards;
+    animation: content-load 1s ease-in 3s forwards;
+    opacity: 0;
 }
 
 @-webkit-keyframes content-load {
