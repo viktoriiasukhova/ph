@@ -850,6 +850,10 @@ h3 {
     .prev {
         font-size: .7rem;
     }
+    
+      .overlay {
+        display: none;
+    }
 
 }
 
