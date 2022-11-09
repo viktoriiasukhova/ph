@@ -142,7 +142,6 @@ h3 {
 }
 
 .header-wrapper {
-    background-color: salmon;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -248,7 +247,6 @@ h3 {
 }
 
 .box {
-    background-color: silver;
     display: flex;
     flex-direction: column;
     align-items: center;
