@@ -370,18 +370,22 @@ h3 {
     #main-header {
         font-size: .8rem;
     }
+    
+    .gallery-container {
+        width: min(70%, 480px);
+    }
 
     .overlay {
         display: none;
     }
 }
 
-@media screen and (max-height: 425px) {
+@media screen and (max-height: 480px) {
     .gallery-container {
-        width: min(35%, 300px);
+        width: min(90%, 450px);
     }
 
     .gallery-container img {
-        width: min(100%, 250px);
+        width: min(100%, 400px);
     }
 }
