@@ -857,13 +857,3 @@ h3 {
 
 }
 
-@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
-    .box {
-        width: 70px;
-    }
-
-    .modalContent {
-        width: min(30%, 200px);
-    }
-
-}
