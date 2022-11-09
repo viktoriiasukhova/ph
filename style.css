@@ -45,10 +45,10 @@ a {
     line-height: normal
 }
 
-.text {
+.loader {
+    width: 100vw;
+    height: 100vh;
     position: fixed;
-    left: 10%;
-    top: 35%;
     -webkit-animation: text-load 1s ease-in forwards;
     -moz-animation: text-load 1s ease-in forwards;
     -o-animation: text-load 1s ease-in forwards;
@@ -56,14 +56,20 @@ a {
     animation-fill-mode: forwards;
     transform: translateY(-20px);
     opacity: 0;
+    transition: all 1.5s;
+}
+
+.text {
+    position: relative;
+    left: 10%;
+    top: 35%;
     color: black;
     text-transform: uppercase;
     padding: 5px;
-    transition: all 2s;
-    z-index: 7;
+    width: 13rem;
 }
 
-.text-hidden {
+.loader-hidden {
     opacity: 0;
     visibility: hidden;
 }
@@ -129,10 +135,10 @@ h3 {
 }
 
 .wrapper {
-    -webkit-animation: content-load 1s ease-in 3s forwards;
-    -moz-animation: content-load 1s ease-in 3s forwards;
-    -o-animation: content-load 1s ease-in 3s forwards;
-    animation: content-load 1s ease-in 3s forwards;
+    -webkit-animation: content-load 1s ease-in 2s forwards;
+    -moz-animation: content-load 1s ease-in 2s forwards;
+    -o-animation: content-load 1s ease-in 2s forwards;
+    animation: content-load 1s ease-in 2s forwards;
     opacity: 0;
 }
 
@@ -294,10 +300,8 @@ h3 {
 
 
 .gallery-container {
-    min-width: 47%;
-    max-width: 50%;
     position: absolute;
-    max-width: 50%;
+    width: min(50%, 500px);
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -312,7 +316,7 @@ h3 {
 }
 
 .gallery-container img {
-    max-width: 100%;
+    width: min(100%, 500px);
     display: block;
     height: auto;
     margin: auto;
