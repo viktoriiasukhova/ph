@@ -840,6 +840,10 @@ h3 {
     .prev {
         font-size: .7rem;
     }
+    
+      .overlay {
+        display: none;
+    }
 }
 
 @media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
