@@ -382,6 +382,6 @@ h3 {
 
 @media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
     .gallery-container {
-        width: min(30%, 300px);
+        width: min(30%, 200px);
     }
 }
