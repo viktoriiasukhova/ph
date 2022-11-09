@@ -1,3 +1,13 @@
+window.addEventListener('load', ()=> {
+    const text = document.querySelector('.text');
+
+    text.classList.add('text-hidden');
+
+    text.addEventListener('transitionend', ()=>{
+        document.body.removeChild('text');
+    })
+});
+
 let mainHeader = document.getElementById('main-header');
 let wrapper = document.querySelector('.wrapper');
 let indexMenu = document.querySelector('.index');
