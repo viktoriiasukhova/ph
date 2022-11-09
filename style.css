@@ -371,17 +371,17 @@ h3 {
         font-size: .8rem;
     }
 
-    .gallery-container {
-        min-width: 90%;
-    }
-
     .overlay {
         display: none;
     }
 }
 
-@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+@media screen and (max-height: 425px) {
     .gallery-container {
-        width: min(30%, 200px);
+        width: min(35%, 300px);
+    }
+
+    .gallery-container img {
+        width: min(100%, 250px);
     }
 }
