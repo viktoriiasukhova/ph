@@ -343,11 +343,6 @@ h3 {
 }
 
 @media screen and (min-width:230px) and (max-width:768px) {
-    .text {
-        left: 3%;
-        top: 3%;
-    }
-
     h1 {
         font-size: .65rem;
     }
