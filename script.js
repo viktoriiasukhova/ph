@@ -1,10 +1,10 @@
 window.addEventListener('load', ()=> {
-    const text = document.querySelector('.text');
+    const text = document.querySelector('.loader');
 
-    text.classList.add('text-hidden');
+    text.classList.add('loader-hidden');
 
     text.addEventListener('transitionend', ()=>{
-        document.body.removeChild('text');
+        document.body.removeChild('loader');
     })
 });
 
