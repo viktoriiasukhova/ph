@@ -380,12 +380,3 @@ h3 {
     }
 }
 
-@media screen and (max-height: 479px) {
-    .gallery-container {
-        width: min(90%, 450px);
-    }
-
-    .gallery-container img {
-        width: min(100%, 400px);
-    }
-}
