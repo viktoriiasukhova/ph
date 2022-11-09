@@ -848,7 +848,7 @@ h3 {
     }
 
     .modalContent {
-        width: min(30%, 200px);
+        width: min(30%, 300px);
     }
 
 }
