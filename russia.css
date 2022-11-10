@@ -789,6 +789,21 @@ h3 {
     animation-delay: 300ms;
 }
 
+.message {
+    /* background-color: blue; */
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 1rem;
+    white-space: nowrap;
+    padding: 1rem;
+    margin-top: 3rem;
+    letter-spacing: 3px;
+}
+
 @media screen and (max-width:480px) {
     .box {
         width: min(100%, 90px);
@@ -796,6 +811,10 @@ h3 {
 
     .box img {
         max-width: 90px;
+    }
+    
+    .message {
+        font-size: .8rem;
     }
 }
 
@@ -853,6 +872,10 @@ h3 {
     
       .overlay {
         display: none;
+    }
+    
+      .message {
+        font-size: .9rem;
     }
 }
 
