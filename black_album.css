@@ -788,15 +788,30 @@ h3 {
 }
 
 .prev {
-    left: 0;
+    left: -11%;
 }
 
 .next {
-    right: 0;
+    right: -11%;
 }
 
 .mySlides {
     animation-delay: 300ms;
+}
+
+.message {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 1rem auto;
+    white-space: nowrap;
+    padding: 1rem;
+    margin-top: 3rem;
+    letter-spacing: 3px;
 }
 
 @media screen and (max-width:480px) {
@@ -806,6 +821,10 @@ h3 {
 
     .box img {
         max-width: 70px;
+    }
+    
+     .message {
+        font-size: .7rem;
     }
 }
 
@@ -859,6 +878,10 @@ h3 {
     
     .overlay {
         display: none;
+    }
+    
+      .message {
+        font-size: .8rem;
     }
 }
 
