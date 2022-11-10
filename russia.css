@@ -778,11 +778,11 @@ h3 {
 }
 
 .prev {
-    left: 0%;
+    left: -11%;
 }
 
 .next {
-    right: 0%;
+    right: -11%;
 }
 
 .mySlides {
@@ -875,7 +875,7 @@ h3 {
     }
     
       .message {
-        font-size: .9rem;
+        font-size: .8rem;
     }
 }
 
