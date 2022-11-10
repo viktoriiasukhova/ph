@@ -376,7 +376,7 @@ h3 {
     }
     
    .gallery-container img {
-        width: min(100%, 300px);
+        width: min(100%, 480px);
     }
 
 
