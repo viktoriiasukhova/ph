@@ -301,7 +301,7 @@ h3 {
 
 .gallery-container {
     position: absolute;
-    width: min(50%, 500px);
+    width: min(50%, 700px);
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -316,7 +316,7 @@ h3 {
 }
 
 .gallery-container img {
-    width: min(100%, 500px);
+    width: min(100%, 550px);
     display: block;
     height: auto;
     margin: auto;
@@ -346,7 +346,7 @@ h3 {
     left: 0;
 }
 
-@media screen and (min-width:230px) and (max-width:768px) {
+@media screen and (max-width:768px) {
     h1 {
         font-size: .65rem;
     }
