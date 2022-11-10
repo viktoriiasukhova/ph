@@ -778,11 +778,11 @@ h3 {
 }
 
 .prev {
-    left: -11%;
+    left: 0;
 }
 
 .next {
-    right: -11%;
+    right: 0;
 }
 
 .mySlides {
