@@ -801,11 +801,11 @@ h3 {
 
 @media screen and (max-width:480px) {
     .box {
-        width: min(100%, 60px);
+        width: min(100%, 70px);
     }
 
     .box img {
-        max-width: 60px;
+        max-width: 70px;
     }
 }
 
