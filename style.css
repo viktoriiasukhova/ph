@@ -301,7 +301,7 @@ h3 {
 
 .gallery-container {
     position: absolute;
-    width: min(50%, 700px);
+    max-width: 50%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -316,7 +316,7 @@ h3 {
 }
 
 .gallery-container img {
-    width: min(100%, 550px);
+    max-width: 100%;
     display: block;
     height: auto;
     margin: auto;
@@ -354,6 +354,10 @@ h3 {
     h3 {
         font-size: 0.6rem;
     }
+    
+    .gallery-container {
+        min-width: 90%;
+    }
 
     .gallery-container.active {
         min-width: 35%;
@@ -370,17 +374,8 @@ h3 {
     #main-header {
         font-size: .8rem;
     }
-    
-    .gallery-container {
-        width: min(50%, 480px);
-    }
-    
-   .gallery-container img {
-        width: min(100%, 480px);
-    }
 
-
-    .overlay {
+.overlay {
         display: none;
     }
 }
