@@ -846,9 +846,12 @@ h3 {
     }
 }
 
-@media screen and (orientatiton:portrait) {
-    body {
-        height: 100vw;
-        transform: rotate(90deg);
+@media screen and (max-width:480px) {
+    .box {
+        width: min(100%, 80px);
+    }
+
+    .box img {
+        max-width: 80px;
     }
 }
