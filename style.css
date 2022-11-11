@@ -49,6 +49,7 @@ a {
     width: 100vw;
     height: 100vh;
     position: fixed;
+    transition: opacity 1.3s, visibility 1.3s;
     -webkit-animation: text-load 1s ease-in forwards;
     -moz-animation: text-load 1s ease-in forwards;
     -o-animation: text-load 1s ease-in forwards;
@@ -59,19 +60,19 @@ a {
     transition: all 1.5s;
 }
 
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
 .text {
     position: relative;
     left: 10%;
-    top: 35%;
+    top: 34%;
     color: black;
     text-transform: uppercase;
     padding: 5px;
     width: 13rem;
-}
-
-.loader-hidden {
-    opacity: 0;
-    visibility: hidden;
 }
 
 h1 {
@@ -216,12 +217,11 @@ h3 {
     color: rgba(0, 0, 0, 0.904);
     cursor: pointer;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: .9rem;
     line-height: normal;
     letter-spacing: 0;
     padding: 10px 5px;
-    text-decoration: underline;
     transition: all 500ms;
 }
 
