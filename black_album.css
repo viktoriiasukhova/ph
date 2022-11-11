@@ -68,12 +68,6 @@ a {
     width: 13rem;
 }
 
-.loader-hidden {
-    opacity: 0;
-    visibility: hidden;
-}
-
-
 h1 {
     font-size: 0.8rem;
     margin: 10px;
@@ -84,8 +78,6 @@ h3 {
     font-size: 0.7rem;
     font-weight: lighter;
 }
-
-
 
 @-webkit-keyframes text-load {
     0% {
@@ -139,58 +131,50 @@ h3 {
 #main-header,
 .gallery-wrapper,
 .mySlides {
-    -webkit-animation: content-load 1s ease-in 1.3s forwards;
-    -moz-animation: content-load 1s ease-in 1.3s forwards;
-    -o-animation: content-load 1s ease-in 1.3s forwards;
-    animation: content-load 1s ease-in 1.3s forwards;
+    -webkit-animation: content-load 1s ease-in 1.4s forwards;
+    -moz-animation: content-load 1s ease-in 1.4s forwards;
+    -o-animation: content-load 1s ease-in 1.4s forwards;
+    animation: content-load 1s ease-in 1.4s forwards;
     opacity: 0;
 }
 
 @-webkit-keyframes content-load {
     from {
-        bottom: -100px;
-        opacity: 0
+        opacity: 0;
     }
 
     to {
-        bottom: 0px;
-        opacity: 1
+        opacity: 1;
     }
 }
 
 @-moz-keyframes content-load {
     from {
-        bottom: -100px;
-        opacity: 0
+        opacity: 0;
     }
 
     to {
-        bottom: 0px;
-        opacity: 1
+        opacity: 1;
     }
 }
 
 @-o-keyframes content-load {
     from {
-        bottom: -100px;
-        opacity: 0
+        opacity: 0;
     }
 
     to {
-        bottom: 0px;
-        opacity: 1
+        opacity: 1;
     }
 }
 
 @keyframes content-load {
     from {
-        bottom: -100px;
-        opacity: 0
+        opacity: 0;
     }
 
     to {
-        bottom: 0px;
-        opacity: 1
+        opacity: 1;
     }
 }
 
@@ -822,6 +806,10 @@ h3 {
     .box img {
         max-width: 70px;
     }
+    
+    .numbertext {
+    font-size: .6rem;
+   }
     
      .message {
         font-size: .7rem;
