@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Cormorant Garamond', serif;
+    overflow: auto;
 }
 
 button {
