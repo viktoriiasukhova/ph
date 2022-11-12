@@ -616,12 +616,7 @@ h3 {
 }
 
 .gallery-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding-top: 50px;
+    position: relative;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -709,7 +704,7 @@ h3 {
     width: 100%;
     height: 100%;
     overflow: auto;
-}
+  }
 
 .modalContent {
     position: relative;
