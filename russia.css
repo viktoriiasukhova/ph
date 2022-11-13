@@ -528,7 +528,7 @@ h3 {
     justify-content: flex-start;
     position: sticky;
     cursor: auto;
-    z-index: 9;
+    z-index: 2;
     transition: all 300ms;
     padding: 1rem;
 }
@@ -671,7 +671,7 @@ h3 {
     right: 0;
     overflow: hidden;
     width: 0;
-    height: 100%;
+    min-height: 100vh;
     transition: all 500ms;
     opacity: .9;
     z-index: 10;
@@ -688,13 +688,11 @@ h3 {
 
 .modal {
     display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
+    position: relative;
     width: 100%;
-    height: 100%;
-    overflow: auto;
+    min-height: 100vh;
+    z-index: 2;
+    transition: all 300ms;
   }
 
 .modalContent {
@@ -703,7 +701,7 @@ h3 {
     right: 0;
     height: auto;
     margin: auto;
-    margin-top: 9%;
+    margin-top: 5%;
     margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
@@ -728,7 +726,7 @@ h3 {
     right: 0;
     overflow: hidden;
     width: 0;
-    height: 100%;
+    min-height: 100vh;
     transition: all 500ms;
     opacity: .9;
     z-index: 10;
@@ -776,15 +774,13 @@ h3 {
 }
 
 .message {
-    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: .5rem auto;
     text-transform: uppercase;
     font-size: 1rem;
+    margin: .5rem auto;
     white-space: nowrap;
-    padding: 1rem;
     letter-spacing: 3px;
 }
 
@@ -795,10 +791,6 @@ h3 {
 
     .box img {
         max-width: 90px;
-    }
-    
-    .modalContent {
-        margin-top: 6%;
     }
     
     .numbertext {
@@ -837,7 +829,6 @@ h3 {
     }
 
     .gallery-wrapper {
-        position: relative;
         justify-content: center;
         padding-top: 0;
     }
@@ -852,7 +843,6 @@ h3 {
     }
 
     .modalContent {
-        margin-top: 5rem;
         margin-bottom: 1rem;
     }
 
