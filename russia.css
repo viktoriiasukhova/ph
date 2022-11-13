@@ -666,7 +666,7 @@ h3 {
     position: absolute;
     background-color: black;
     bottom: 0;
-    top: 0;
+    top: -50px;
     left: 100%;
     right: 0;
     overflow: hidden;
@@ -721,7 +721,7 @@ h3 {
     position: absolute;
     background-color: black;
     bottom: 0;
-    top: 0;
+    top: -50px;
     left: 100%;
     right: 0;
     overflow: hidden;
