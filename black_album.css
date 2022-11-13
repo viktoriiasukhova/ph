@@ -702,7 +702,7 @@ h3 {
 
 .modalContent {
     position: relative;
-    width: min(50%, 700px);
+    width: min(50%, 550px);
     right: 0;
     height: auto;
     margin: auto;
@@ -742,7 +742,7 @@ h3 {
 }
 
 .mySlides {
-    width: min(100%, 350px);
+    width: min(100%, 400px);
     display: none;
     transition: all 500ms;
 }
@@ -800,6 +800,15 @@ h3 {
     .numbertext {
         font-size: .6rem;
     }
+    
+    .modalContent {
+        width: min(50%, 250px); 
+    }
+
+    .mySlides {
+        width: min(100%, 250px);
+    }
+
 
     .prev {
         left: -20%;
@@ -858,8 +867,13 @@ h3 {
         width: min(100%, 80px);
     }
 
+     .modalContent {
+        margin-bottom: 1rem;
+        width: min(50%, 300px); 
+    }
+
     .mySlides {
-        width: min(100%, 200px);
+        width: min(100%, 300px);
     }
 
     .next,
