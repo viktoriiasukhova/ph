@@ -821,6 +821,14 @@ h3 {
 }
 
 @media screen and (max-width:768px) {
+    h1 {
+        font-size: .65rem;
+    }
+
+    h3 {
+        font-size: 0.6rem;
+    }
+    
     #main-header {
         height: 40px;
         transition: all 500ms;
@@ -838,7 +846,6 @@ h3 {
     }
 
     .gallery-wrapper {
-        position: relative;
         justify-content: center;
         padding-top: 0;
     }
@@ -870,6 +877,6 @@ h3 {
     }
 
     .message {
-        font-size: .8rem;
+        font-size: .7rem;
     }
 }
