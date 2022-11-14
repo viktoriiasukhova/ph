@@ -646,7 +646,8 @@ h3 {
 
 .box img {
     padding: 1px;
-    width: min(100%, 170px);
+    max-width: 100%;
+    object-fit: cover;
 }
 
 .box .numbertext {
