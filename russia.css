@@ -794,7 +794,7 @@ h3 {
     }
     
     .message {
-        font-size: .6rem;
+        font-size: .7rem;
         letter-spacing: 2px;
     }
 }
@@ -855,7 +855,4 @@ h3 {
         display: none;
     }
     
-      .message {
-        font-size: .7rem;
-    }
 }
