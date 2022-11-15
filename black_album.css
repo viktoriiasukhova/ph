@@ -642,7 +642,7 @@ h3 {
     justify-content: center;
     cursor: pointer;
     gap: 2px;
-    max-width: 100%;
+    width: min(100%, 10rem);
 }
 
 .box img {
@@ -783,8 +783,8 @@ h3 {
         width: min(100%, 80px);
     }
 
-    .box img {
-        max-width: 70px;
+   .box img {
+        max-width: 5rem;
     }
 
     .numbertext {
@@ -834,10 +834,14 @@ h3 {
     .gallery-container {
         justify-content: center;
     }
+    
+    .box {
+        width: min(100%, 6rem);
+    }
 
     .modalContent {
         margin-bottom: 1rem;
-        width: min(50%, 300px); 
+        max-width: 60%;
     }
 
     .next,
@@ -850,7 +854,13 @@ h3 {
     }
 }
 
-@media (max-width:1023px) {
+@media (min-width:768px) and (max-width:1023px) {
+    .box {
+        width: min(100%, 8rem);
+    }
+
     .modalContent {
         max-width: 50%;
+     
     }
+}
