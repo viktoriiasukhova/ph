@@ -641,7 +641,7 @@ h3 {
     justify-content: center;
     cursor: pointer;
     gap: 2px;
-    width: min(100%, 170px);
+    max-width: 100%;
 }
 
 .box img {
@@ -694,12 +694,10 @@ h3 {
 
 .modalContent {
     position: relative;
-    width: min(90%, 1000px);
+    max-width: 90%;
     right: 0;
     height: auto;
-    margin: auto;
-    margin-top: 5%;
-    margin-bottom: 2rem;
+    margin: 5% auto 2rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -715,9 +713,6 @@ h3 {
 }
 
 .modalContent img {
-    max-width: 100%;
-    height: auto;
-    display: block;
     object-fit: cover;
 }
 
@@ -787,7 +782,7 @@ h3 {
     letter-spacing: 3px;
 }
 
-@media screen and (max-width:479px) {
+@media (max-width:479px) {
     .box {
         width: min(100%, 90px);
     }
@@ -810,7 +805,7 @@ h3 {
     }
 }
 
-@media screen and (max-width:767px) {
+@media (max-width:767px) {
     h1 {
         font-size: .65rem;
     }
@@ -842,16 +837,10 @@ h3 {
 
     .gallery-container {
         justify-content: center;
-        width: min(100%, 700px);
-    }
-
-    .box {
-        width: min(100%, 100px);
     }
 
     .modalContent {
         margin-bottom: 1rem;
-        max-width: 320px;
     }
 
     .next,
@@ -865,8 +854,3 @@ h3 {
     
 }
 
-@media (max-width:1023px){
-    .modalContent {
-        max-width: 500px;
-    }
-}
