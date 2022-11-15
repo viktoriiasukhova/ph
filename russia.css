@@ -693,7 +693,7 @@ h3 {
 
 .modalContent {
     position: relative;
-    max-width: 90%;
+    width: clamp(70vw, 90%, 350px);
     right: 0;
     height: auto;
     margin: 5% auto 2rem auto;
