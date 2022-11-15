@@ -642,7 +642,7 @@ h3 {
     justify-content: center;
     cursor: pointer;
     gap: 2px;
-    width: min(100%, 10rem);
+    width: 10rem;
 }
 
 .box img {
@@ -780,7 +780,7 @@ h3 {
 
 @media (max-width:479px) {
     .box {
-        width: min(100%, 80px);
+        width: 5rem;
     }
 
    .box img {
@@ -836,7 +836,7 @@ h3 {
     }
     
     .box {
-        width: min(100%, 6rem);
+        width: 6rem;
     }
 
     .modalContent {
@@ -856,11 +856,10 @@ h3 {
 
 @media (min-width:768px) and (max-width:1023px) {
     .box {
-        width: min(100%, 8rem);
+        width: 8rem;
     }
 
     .modalContent {
         max-width: 50%;
-     
-    }
+      }
 }
