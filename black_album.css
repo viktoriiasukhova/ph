@@ -642,11 +642,12 @@ h3 {
     justify-content: center;
     cursor: pointer;
     gap: 2px;
-    width: min(100%, 130px);
+    max-width: 100%;
 }
 
 .box img {
     padding: 1px;
+    object-fit: cover;
 }
 
 .box .numbertext {
@@ -693,11 +694,10 @@ h3 {
 
 .modalContent {
     position: relative;
-    width: min(50%, 550px);
+    max-width: 70%;
     right: 0;
     height: auto;
-    margin: auto;
-    margin-top: 5%;
+    margin: 2rem auto;
     margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
@@ -733,7 +733,6 @@ h3 {
 }
 
 .mySlides {
-    width: min(100%, 400px);
     display: none;
     transition: all 500ms;
 }
@@ -757,11 +756,11 @@ h3 {
 }
 
 .prev {
-    left: -11%;
+    left: 0;
 }
 
 .next {
-    right: -11%;
+    right: 0;
 }
 
 .mySlides {
@@ -779,9 +778,9 @@ h3 {
     letter-spacing: 3px;
 }
 
-@media screen and (max-width:479px) {
+@media (max-width:479px) {
     .box {
-        width: min(100%, 70px);
+        width: min(100%, 80px);
     }
 
     .box img {
@@ -793,20 +792,7 @@ h3 {
     }
     
     .modalContent {
-        width: min(50%, 250px); 
-    }
-
-    .mySlides {
-        width: min(100%, 250px);
-    }
-
-
-    .prev {
-        left: -20%;
-    }
-
-    .next {
-        right: -20%;
+        min-width: 70%;
     }
 
     .message {
@@ -815,7 +801,7 @@ h3 {
     }
 }
 
-@media screen and (max-width:767px) {
+@media (max-width:767px) {
     h1 {
         font-size: .65rem;
     }
@@ -847,24 +833,11 @@ h3 {
 
     .gallery-container {
         justify-content: center;
-        width: min(100%, 700px);
     }
 
-    .text-wrapper {
-        white-space: nowrap;
-    }
-
-    .box {
-        width: min(100%, 80px);
-    }
-
-     .modalContent {
+    .modalContent {
         margin-bottom: 1rem;
         width: min(50%, 300px); 
-    }
-
-    .mySlides {
-        width: min(100%, 300px);
     }
 
     .next,
@@ -876,3 +849,8 @@ h3 {
         display: none;
     }
 }
+
+@media (max-width:1023px) {
+    .modalContent {
+        max-width: 50%;
+    }
