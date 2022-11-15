@@ -349,8 +349,10 @@ h3 {
 }
 
 .gallery-container.active {
-    left: 33%;
+    left: 30%;
     opacity: .1;
+    min-width: 45%;
+    max-width: 50%;
 }
 
 .gallery-wrapper.active .overlay {
