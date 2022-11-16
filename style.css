@@ -30,7 +30,7 @@ a {
 }
 
 .wrapper {
-    background-image: url('img/hero_photo-resizer.ru.jpg');
+    background-image: url(img/hero_photo-resizer.ru.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
