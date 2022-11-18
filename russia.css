@@ -886,6 +886,12 @@ h3 {
     .numbertext {
         font-size: .6rem;
     }
+    
+    .modalContent.active {
+        right: 0;
+        min-width: 40%;
+        max-width: 50%;
+    }
 
     .message {
         font-size: .7rem;
