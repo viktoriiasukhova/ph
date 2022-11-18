@@ -5,7 +5,7 @@
 }
 
 body {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: 'Cormorant Garamond', serif;
@@ -23,6 +23,7 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 
@@ -138,7 +139,7 @@ h3 {
 }
 
 @-webkit-keyframes content-load {
-  from {
+    from {
         opacity: 0;
     }
 
@@ -148,7 +149,7 @@ h3 {
 }
 
 @-moz-keyframes content-load {
-  from {
+    from {
         opacity: 0;
     }
 
@@ -158,7 +159,7 @@ h3 {
 }
 
 @-o-keyframes content-load {
-  from {
+    from {
         opacity: 0;
     }
 
@@ -168,7 +169,7 @@ h3 {
 }
 
 @keyframes content-load {
-  from {
+    from {
         opacity: 0;
     }
 
@@ -476,35 +477,47 @@ h3 {
     }
 }
 
-.one {
+.one,
+.six,
+.eleven,
+.sixteen {
     -webkit-animation-delay: 1.5s;
     -moz-animation-delay: 1.5s;
     -o-animation-delay: 1.5s;
     animation-delay: 1.5s;
 }
 
-.two {
+.two,
+.seven,
+.twelve,
+.seventeen {
     -webkit-animation-delay: 1.5s;
     -moz-animation-delay: 1.5s;
     -o-animation-delay: 1.5s;
     animation-delay: 1.5s;
 }
 
-.three {
+.three,
+.eight,
+.thirteen {
     -webkit-animation-delay: 1.6s;
     -moz-animation-delay: 1.6s;
     -o-animation-delay: 1.6s;
     animation-delay: 1.6s;
 }
 
-.four {
+.four,
+.nine,
+.fourteen {
     -webkit-animation-delay: 1.5s;
     -moz-animation-delay: 1.5s;
     -o-animation-delay: 1.5s;
     animation-delay: 1.5s;
 }
 
-.five {
+.five,
+.ten,
+.fifteen {
     -webkit-animation-delay: 1.6s;
     -moz-animation-delay: 1.6s;
     -o-animation-delay: 1.6s;
@@ -612,69 +625,136 @@ h3 {
 
 .gallery-wrapper {
     position: relative;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
     z-index: 1;
     transition: all 300ms;
 }
 
 .gallery-container {
-    max-width: 95%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-    gap: .5rem;
-    margin: 2% 1%;
-    padding: 3px;
-    transition: all 300ms;
-    opacity: 1;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .box {
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    gap: 2px;
-    width: 11rem;
+    padding: 3px;
 }
 
 .box img {
-    padding: 1px;
-    object-fit: cover;
+    transition: all 1s;
+}
+
+.box:hover img {
+    transform: scale(1.2);
 }
 
 .box .numbertext {
     color: black;
-}
-
-.numbertext {
-    color: #f2f2f2;
     font-size: .7rem;
+    transition: all 1s;
+    mix-blend-mode: difference;
+    align-self: flex-end;
 }
 
-.overlay {
-    position: absolute;
-    background-color: black;
-    bottom: 0;
-    top: -50px;
-    left: 100%;
-    right: 0;
-    overflow: hidden;
-    width: 0;
-    min-height: 100vh;
-    transition: all 500ms;
-    opacity: .9;
-    z-index: 10;
+.box:hover .numbertext {
+    display: none;
+}
+
+.one {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.two {
+    top: 5%;
+    left: 5%;
+}
+
+.three {
+    right: 31%;
+    top: 3%;
+}
+
+.four {
+    bottom: 4%;
+    right: 10%;
+}
+
+.five {
+    left: 20%;
+    bottom: 20%;
+}
+
+.six {
+    top: 19%;
+    left: 39%;
+}
+
+.seven {
+    top: 30%;
+    left: 15%;
+}
+
+.eight {
+    left: 10%;
+    top: 50%;
+}
+
+.nine {
+    bottom: 30%;
+    right: 25%;
+}
+
+.ten {
+    bottom: 7%;
+    left: 35%;
+}
+
+.eleven {
+    bottom: 15%;
+    right: 3%;
+}
+
+.twelve {
+    bottom: 18%;
+    right: 37%;
+}
+
+.thirteen {
+    top: 29%;
+    right: 17%;
+}
+
+.fourteen {
+    top: 1%;
+    right: 2%;
+}
+
+.fifteen {
+    bottom: 15%;
+    left: 2%;
+}
+
+.sixteen {
+    top: 13%;
+    left: 23%;
+}
+
+.seventeen {
+    bottom: 35%;
+    right: 9%;
 }
 
 .gallery-container.active {
-    opacity: .1;
+    opacity: .5;
 }
 
 .gallery-wrapper.active .overlay {
@@ -686,16 +766,14 @@ h3 {
     display: none;
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     z-index: 2;
     transition: all 300ms;
-  }
+}
 
 .modalContent {
     position: relative;
-    width: clamp(70vw, 90%, 350px);
     right: 0;
-    height: auto;
     margin: 5% auto 2rem auto;
     display: flex;
     flex-direction: column;
@@ -703,16 +781,12 @@ h3 {
     justify-content: center;
     padding: .5rem;
     transition: all 300ms;
-    /*  z-index: 1; */
+    width: clamp(50vw, 90%, 350px);
 }
 
 .modalContent.active {
     right: 17%;
     max-width: 37%;
-}
-
-.modalContent img {
-    object-fit: cover;
 }
 
 .overlay {
@@ -724,7 +798,7 @@ h3 {
     right: 0;
     overflow: hidden;
     width: 0;
-    min-height: 100vh;
+    height: 100vh;
     transition: all 500ms;
     opacity: .9;
     z-index: 10;
@@ -745,6 +819,7 @@ h3 {
     padding: 1px 0;
     margin: 2px 0;
     color: black;
+    font-size: .8rem;
 }
 
 .next,
@@ -782,29 +857,43 @@ h3 {
 }
 
 @media (max-width:479px) {
-    .box {
-        width: 6rem;
+    .nav-menu.active {
+        width: 100%;
+        transition: all 500ms;
+    }
+
+    .overlay {
+        display: none;
     }
 
     .box img {
-        max-width: 6rem;
+        max-width: 5rem;
     }
-    
-    .modalContent {
-        max-width: 200px;
+
+    .box:hover img {
+        transform: scale(1);
     }
-    
+
+    .box .numbertext {
+        font-size: .6rem;
+        transition: all 1s;
+    }
+
+    .box:hover .numbertext {
+        display: block;
+    }
+
     .numbertext {
-    font-size: .6rem;
+        font-size: .6rem;
     }
-    
+
     .message {
         font-size: .7rem;
         letter-spacing: 2px;
     }
 }
 
-@media (max-width:767px) {
+@media (min-width:480px) and (max-width:767px) {
     h1 {
         font-size: .65rem;
     }
@@ -829,36 +918,20 @@ h3 {
         font-size: .8rem;
     }
 
-    .gallery-wrapper {
-        justify-content: center;
-        padding-top: 0;
-    }
-
-    .gallery-container {
-        justify-content: center;
-    }
-    
-    .box {
-        width: 7rem;
+    .box img {
+        max-width: 6.5rem;
     }
 
     .modalContent {
         margin-bottom: 1rem;
-        max-width: 320px;
     }
 
     .next,
     .prev {
         font-size: .7rem;
     }
-    
-      .overlay {
-        display: none;
-    }
-  }
 
-@media (min-width:768px) and (max-width:1023px) {
-    .box {
-        width: 9rem;
+    .overlay {
+        display: none;
     }
 }
