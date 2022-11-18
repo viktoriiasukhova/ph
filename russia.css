@@ -632,6 +632,7 @@ h3 {
 }
 
 .box {
+    border: 1px solid;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -863,6 +864,10 @@ h3 {
     .box img {
         max-width: 5rem;
     }
+    
+    .box.one img {
+        min-width: 7rem;
+    }
 
     .box:hover img {
         transform: scale(1);
@@ -920,6 +925,10 @@ h3 {
 
     .box img {
         max-width: 6.5rem;
+    }
+    
+    .box.one img {
+        min-width: 9rem;
     }
 
     .modalContent {
