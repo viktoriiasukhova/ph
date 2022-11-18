@@ -96,25 +96,3 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
 }
-
-/* let mainElement = document.documentElement;
-const mainElementWidth = mainElement.clientWidth;
-const mainElementHeight = mainElement.clientHeight;
-console.log(mainElementHeight);
-console.log(mainElementWidth); */
-/* let elements = document.querySelector('.mySlides') */
-function myFunction (x){
-    if(x.matches){
-        elements.style.display = 'none'
-    }else {
-        elements.style.display = 'block'
-    }
-}
-
-const mmObj = window.matchMedia("(max-height: 500px)");
-myFunction(mmObj);
-mmObj.addListener(myFunction);
-
-
-
-
