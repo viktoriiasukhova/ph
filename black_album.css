@@ -620,7 +620,6 @@ h3 {
 }
 
 .gallery-wrapper {
-    background-color: seagreen;
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -629,7 +628,6 @@ h3 {
 }
 
 .box {
-    background-color: skyblue;
     border: 1px solid;
     position: absolute;
     display: flex;
@@ -731,7 +729,6 @@ h3 {
 }
 
 .modal {
-    background-color: pink;
     display: none;
     position: relative;
     width: 100%;
@@ -741,7 +738,6 @@ h3 {
 }
 
 .modalContent {
-    background-color: aquamarine;
     position: relative;
     right: 0;
     margin: 2rem auto;
