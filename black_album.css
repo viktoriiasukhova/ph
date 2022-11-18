@@ -23,6 +23,7 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 
@@ -477,35 +478,42 @@ h3 {
     }
 }
 
-.one {
+.one,
+.six,
+.eleven {
     -webkit-animation-delay: 1.5s;
     -moz-animation-delay: 1.5s;
     -o-animation-delay: 1.5s;
     animation-delay: 1.5s;
 }
 
-.two {
+.two,
+.seven,
+.twelve {
     -webkit-animation-delay: 1.5s;
     -moz-animation-delay: 1.5s;
     -o-animation-delay: 1.5s;
     animation-delay: 1.5s;
 }
 
-.three {
+.three,
+.eight {
     -webkit-animation-delay: 1.6s;
     -moz-animation-delay: 1.6s;
     -o-animation-delay: 1.6s;
     animation-delay: 1.6s;
 }
 
-.four {
+.four,
+.nine {
     -webkit-animation-delay: 1.5s;
     -moz-animation-delay: 1.5s;
     -o-animation-delay: 1.5s;
     animation-delay: 1.5s;
 }
 
-.five {
+.five,
+.ten {
     -webkit-animation-delay: 1.6s;
     -moz-animation-delay: 1.6s;
     -o-animation-delay: 1.6s;
@@ -612,70 +620,109 @@ h3 {
 }
 
 .gallery-wrapper {
+    background-color: seagreen;
     position: relative;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
     width: 100%;
     min-height: 100vh;
     z-index: 2;
     transition: all 300ms;
 }
 
-.gallery-container {
-    max-width: 95%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-    gap: .5rem;
-    margin: 2% 1%;
-    padding: 3px;
-    transition: all 300ms;
-    opacity: 1;
-}
-
 .box {
+    background-color: skyblue;
+    border: 1px solid;
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    gap: 2px;
-    width: 10rem;
+    padding: 3px;
 }
 
 .box img {
-    padding: 1px;
-    object-fit: cover;
+    transition: all 1s;
+}
+
+.box:hover img {
+    transform: scale(1.2);
+}
+
+.one {
+    top: 18%;
+    right: 30%;
+}
+
+.two {
+    right: 13%;
+    top: 3%;
+}
+
+.three {
+    bottom: 11%;
+    right: 10%;
+}
+
+.four {
+    left: 27%;
+    bottom: 20%;
+}
+
+.five {
+    top: 2%;
+    left: 39%;
+}
+
+.six {
+    top: 5%;
+    left: 3%;
+}
+
+.seven {
+    left: 10%;
+    top: 50%;
+}
+
+.eight {
+    bottom: 30%;
+    right: 25%;
+}
+
+.nine {
+    bottom: 9%;
+    left: 45%;
+}
+
+.ten {
+    top: 25%;
+    right: 3%;
+}
+
+.eleven {
+    top: 17%;
+    left: 15%;
+}
+
+.twelve {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .box .numbertext {
     color: black;
-}
-
-.numbertext {
-    color: #f2f2f2;
     font-size: .7rem;
+    transition: all 1s;
+    mix-blend-mode: difference;
+    align-self: flex-end;
 }
 
-.overlay {
-    position: absolute;
-    background-color: black;
-    bottom: 0;
-    top: -50px;
-    left: 100%;
-    right: 0;
-    overflow: hidden;
-    width: 0;
-    min-height: 100vh;
-    transition: all 500ms;
-    opacity: .9;
-    z-index: 10;
+.box:hover .numbertext {
+    display: none;
 }
 
 .gallery-container.active {
-    opacity: .1;
+    opacity: .5;
 }
 
 .gallery-wrapper.active .overlay {
@@ -683,7 +730,8 @@ h3 {
     left: 0;
 }
 
-.modal{
+.modal {
+    background-color: pink;
     display: none;
     position: relative;
     width: 100%;
@@ -693,18 +741,17 @@ h3 {
 }
 
 .modalContent {
+    background-color: aquamarine;
     position: relative;
-    max-width: 70%;
     right: 0;
-    height: auto;
     margin: 2rem auto;
-    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: .5rem;
     transition: all 500ms;
+    width: clamp(40vw, 80%, 200px);
 }
 
 .modalContent.active {
@@ -742,6 +789,7 @@ h3 {
     padding: 1px 0;
     margin: 2px 0;
     color: black;
+    font-size: .8rem;
 }
 
 .next,
@@ -749,10 +797,11 @@ h3 {
     cursor: pointer;
     position: absolute;
     bottom: 0%;
-    padding: 2px 5px;
+    padding: .1rem;
     font-size: .8rem;
     user-select: none;
     color: black;
+    width: 1.5rem;
 }
 
 .prev {
@@ -778,30 +827,69 @@ h3 {
     letter-spacing: 3px;
 }
 
+.hero .message {
+    display: none;
+}
+
 @media (max-width:479px) {
-    .box {
-        width: 5rem;
+    .nav-menu.active {
+        width: 100%;
+        transition: all 500ms;
     }
 
-   .box img {
-        max-width: 5rem;
+    .overlay {
+        display: none;
+    }
+
+    .box img {
+        max-width: 4rem;
+    }
+
+    .box:hover img {
+        transform: scale(1);
+    }
+
+    .box .numbertext {
+        font-size: .6rem;
+        transition: all 1s;
+    }
+
+
+    .box:hover .numbertext {
+        display: block;
+    }
+
+    .box.twelve {
+        min-width: 8rem;
+    }
+
+    .twelve img {
+        min-width: 7rem;
     }
 
     .numbertext {
         font-size: .6rem;
     }
-    
+
     .modalContent {
         min-width: 70%;
+        margin: 1rem auto;
+    }
+
+    .modalContent.active {
+        right: 0;
+        min-width: 10%;
+        max-width: 20%;
     }
 
     .message {
-        font-size: .7rem;
+        font-size: .6rem;
         letter-spacing: 2px;
     }
+
 }
 
-@media (max-width:767px) {
+@media (min-width:480px) and (max-width:767px) {
     h1 {
         font-size: .65rem;
     }
@@ -809,7 +897,7 @@ h3 {
     h3 {
         font-size: 0.6rem;
     }
-    
+
     #main-header {
         height: 40px;
         transition: all 500ms;
@@ -826,22 +914,16 @@ h3 {
         font-size: .8rem;
     }
 
-    .gallery-wrapper {
-        justify-content: center;
-        padding-top: 0;
+    .box img {
+        max-width: 6rem;
     }
 
-    .gallery-container {
-        justify-content: center;
-    }
-    
-    .box {
-        width: 6rem;
+    .box.twelve {
+        min-width: 11rem;
     }
 
-    .modalContent {
-        margin-bottom: 1rem;
-        max-width: 60%;
+    .twelve img {
+        min-width: 10rem;
     }
 
     .next,
@@ -852,6 +934,10 @@ h3 {
     .overlay {
         display: none;
     }
+
+    .message {
+        font-size: .7rem;
+    }
 }
 
 @media (min-width:768px) and (max-width:1023px) {
@@ -859,7 +945,12 @@ h3 {
         width: 8rem;
     }
 
+    .box.twelve {
+        min-width: 13rem;
+    }
+
     .modalContent {
         max-width: 50%;
-      }
+    }
 }
+
