@@ -62,14 +62,14 @@ function openModal() {
     if (galleryContainer.style.display === 'none'){
         document.getElementById("myModal").style.display = "block";
     }else {
-        galleryContainer.style.display = 'flex';
+        galleryContainer.style.display = 'block';
     }
 }
 
 // Close the Modal
 function closeModal() {
     document.getElementById("myModal").style.display = "none";
-    galleryWrapper.style.display = 'flex';
+    galleryWrapper.style.display = 'block';
 }
 
 var slideIndex = 1;
