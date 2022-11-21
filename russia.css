@@ -571,6 +571,10 @@ h3 {
     color: rgba(48, 44, 44, 0.769);
 }
 
+#main-header .header-wrapper .closecursor {
+    display: none;
+}
+
 .nav-menu {
     background-color: white;
     position: fixed;
