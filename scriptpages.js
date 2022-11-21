@@ -55,7 +55,6 @@ closeButton.addEventListener('click', () => {
 function openModal() {
     document.getElementById("myModal").style.display = "block";
     galleryWrapper.style.display = 'none';
-    document.querySelector('.closecursor').style.display = 'block'
     if (galleryContainer.style.display === 'none'){
         document.getElementById("myModal").style.display = "block";
     }else {
@@ -67,7 +66,6 @@ function openModal() {
 function closeModal() {
     document.getElementById("myModal").style.display = "none";
     galleryWrapper.style.display = 'block';
-    document.querySelector('.closecursor').style.display = 'none'
 }
 
 var slideIndex = 1;
