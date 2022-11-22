@@ -100,17 +100,19 @@ a {
 }
 
 .gallery-container h1 {
+    font-family: 'Special Elite', cursive;
     font-size: 2rem;
     text-transform: uppercase;
     color: black;
-    letter-spacing: 10px;
-    font-weight: 600;
+    letter-spacing: 1.3rem;
+    font-weight: 500;
     white-space: nowrap;
 }
 
 @media (max-width:479px) {
     .gallery-container h1 {
         font-size: 1rem;
+        letter-spacing: .9rem;
     }
 
     .gallery-container.active {
@@ -121,6 +123,7 @@ a {
 @media (min-width:480px) and (max-width:767px) {
     .gallery-container h1 {
         font-size: 1.5rem;
+        letter-spacing: 1.1rem;
     }
 
     .gallery-container.active {
