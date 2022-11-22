@@ -51,13 +51,13 @@ closeButton.addEventListener('click', () => {
     modal.classList.toggle('active');
 });
 
-// Open the Modal
 function openModal() {
+    let galleryContainer = document.querySelector('.gallery-container');
     document.getElementById("myModal").style.display = "block";
     galleryWrapper.style.display = 'none';
-    if (galleryContainer.style.display === 'none'){
+    if (galleryContainer.style.display === 'none') {
         document.getElementById("myModal").style.display = "block";
-    }else {
+    } else {
         galleryContainer.style.display = 'block';
     }
 }
